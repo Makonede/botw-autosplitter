@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug Auto Splitter",
+      "program": "asr-debugger",
+      "args": [
+        "--debug",
+        "target${pathSeparator}wasm32-wasip1${pathSeparator}debug${pathSeparator}botw_autosplitter.wasm"
+      ],
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}

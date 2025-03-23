@@ -1,0 +1,28 @@
+cargo-features = ['trim-paths']
+
+[package]
+name = 'botw-autosplitter'
+version = '1.0.0'
+edition = '2024'
+
+[dependencies]
+asr = { git = 'https://github.com/LiveSplit/asr', features = [ 'alloc', 'derive' ] }
+
+[lib]
+crate-type = ['cdylib']
+
+[profile.dev]
+lto = true
+
+[profile.release]
+lto = true
+panic = 'abort'
+codegen-units = 1
+strip = true
+trim-paths = true
+
+[unstable]
+trim-paths = true
+
+[profile.release.build-override]
+opt-level = 0

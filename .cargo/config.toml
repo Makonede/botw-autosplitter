@@ -1,0 +1,14 @@
+[build]
+target = "wasm32-wasip1"
+rustflags = [
+    "-C", "target-feature=+bulk-memory,+mutable-globals,+nontrapping-fptoint,+sign-ext,+simd128,+relaxed-simd,+tail-call,+multivalue",
+    "-Z", "virtual-function-elimination",
+    "-C", "lto",
+]
+
+[alias]
+b = [
+    "build",
+    "-Z", "build-std=std,panic_abort",
+    "-Z", "build-std-features=panic_immediate_abort",
+]
