@@ -1,4 +1,3 @@
 # botw-autosplitter
 
-A LiveSplit autosplitter for The Legend of Zelda: Breath of the Wild (Switch
-1.6.0).
+A LiveSplit autosplitter for The Legend of Zelda: Breath of the Wild.
