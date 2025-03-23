@@ -6,7 +6,7 @@ version = '1.0.0'
 edition = '2024'
 
 [dependencies]
-asr = { git = 'https://github.com/LiveSplit/asr', features = [ 'alloc', 'derive' ] }
+asr = { git = 'https://github.com/LiveSplit/asr', features = ['alloc', 'derive'] }
 
 [lib]
 crate-type = ['cdylib']
